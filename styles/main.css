@@ -260,19 +260,19 @@ html {
 }
 
 :not(pre) > code[class*="language-"], pre[class*="language-"] {
-  background: #EEE;
+  background: #EEE !important;
 }
 
 .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol {
-  color: #1F1C81;
+  color: #1F1C81 !important;
 }
 
 .token.property, .token.tag, .token.boolean, .token.number, .token.constant, .token.symbol {
-  color: #1F1C81;
+  color: #1F1C81 !important;
 }
 
 .token.selector, .token.attr-name, .token.string, .token.builtin {
-  color: #15BB79;
+  color: #15BB79 !important;
 }
 
 body {

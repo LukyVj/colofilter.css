@@ -188,6 +188,7 @@ footer {
 
     transform: scale(0.99);
     cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 
 
     img {
@@ -196,7 +197,11 @@ footer {
       float: left;
       width: 100%;
     }
-
+    
+    &:active {
+     opacity: 0.5; 
+     transform: scale(0.89);     
+    }
     span{
       display: block;
       width: 100%;

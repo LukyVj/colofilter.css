@@ -1,0 +1,86 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>colofilter css</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <link rel="shortcut icon" type="image/png" href="favicon.png" />
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/prism.css">
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        
+<div class="container">
+    <header>
+      <h1>Colofilter.css</h1>
+      <p>Those colorful filters uses css blend modes and were heavily inspired by Spotify new 2015 ads</p>
+      <p>This technic is called "DuoTone", and today, with the power of CSS we can play around with some blend-modes properties, to get some cool visual results.</p>
+    </header>
+    <div class="content"><a href="href" class="closeBlock">close spotify examples</a>
+      <div class="spotifyBlock"><img src="http://f.fastcompany.net/multisite_files/fastcompany/imagecache/slideshow_large/slideshow/2015/03/3043547-slide-s-3-spotifys-new-look-signals-its-identity-shift.jpg"/><img src="http://www.adweek.com/files/2015_Dec/spotify-geotargeting-01-2015.png"/><img src="https://i.ytimg.com/vi/3SKii_OLrHs/maxresdefault.jpg"/><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/spotify_geoffrey_duotone.gif"/></div>
+      <p>To use those filters, download the <code>colofilter.css</code> file, add it to the <code>head</code> of your document :</p>
+      <pre class="language-markup"><code class="language-markup">&lt;link href="path/to/colofilter.css" rel="stylesheet" type="text/css"></code></pre>
+      <p>Then to use the filters, use the proper classes on your elements, and that's it!</p>
+      <pre class="language-markup"><code class="language-markup">&lt;div class="blend-blue">
+    &lt;img src="image.png"/>
+    &lt;span>lorem&lt;/span>
+  &lt;/div></code></pre>
+      <p>Examples <i>(click the images to copy the classes)</i>: </p>
+      <div class="filters"> 
+        <div id="blend-blue" data-color="blue" data-tint="" data-clipboard-text="blend-blue" class="blend-blue block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-blue-dark" data-color="blue" data-tint="-dark" data-clipboard-text="blend-blue-dark" class="blend-blue-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-blue-light" data-color="blue" data-tint="-light" data-clipboard-text="blend-blue-light" class="blend-blue-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-orange" data-color="orange" data-tint="" data-clipboard-text="blend-orange" class="blend-orange block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-orange-dark" data-color="orange" data-tint="-dark" data-clipboard-text="blend-orange-dark" class="blend-orange-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-orange-light" data-color="orange" data-tint="-light" data-clipboard-text="blend-orange-light" class="blend-orange-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-red" data-color="red" data-tint="" data-clipboard-text="blend-red" class="blend-red block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-red-dark" data-color="red" data-tint="-dark" data-clipboard-text="blend-red-dark" class="blend-red-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-red-light" data-color="red" data-tint="-light" data-clipboard-text="blend-red-light" class="blend-red-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-green" data-color="green" data-tint="" data-clipboard-text="blend-green" class="blend-green block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-green-dark" data-color="green" data-tint="-dark" data-clipboard-text="blend-green-dark" class="blend-green-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-green-light" data-color="green" data-tint="-light" data-clipboard-text="blend-green-light" class="blend-green-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-yellow" data-color="yellow" data-tint="" data-clipboard-text="blend-yellow" class="blend-yellow block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-yellow-dark" data-color="yellow" data-tint="-dark" data-clipboard-text="blend-yellow-dark" class="blend-yellow-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-yellow-light" data-color="yellow" data-tint="-light" data-clipboard-text="blend-yellow-light" class="blend-yellow-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-purple" data-color="purple" data-tint="" data-clipboard-text="blend-purple" class="blend-purple block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-purple-dark" data-color="purple" data-tint="-dark" data-clipboard-text="blend-purple-dark" class="blend-purple-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-purple-light" data-color="purple" data-tint="-light" data-clipboard-text="blend-purple-light" class="blend-purple-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-pink" data-color="pink" data-tint="" data-clipboard-text="blend-pink" class="blend-pink block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-pink-dark" data-color="pink" data-tint="-dark" data-clipboard-text="blend-pink-dark" class="blend-pink-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-pink-light" data-color="pink" data-tint="-light" data-clipboard-text="blend-pink-light" class="blend-pink-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-blue-yellow" data-color="blue-yellow" data-tint="" data-clipboard-text="blend-blue-yellow" class="blend-blue-yellow block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-blue-yellow-dark" data-color="blue-yellow" data-tint="-dark" data-clipboard-text="blend-blue-yellow-dark" class="blend-blue-yellow-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-blue-yellow-light" data-color="blue-yellow" data-tint="-light" data-clipboard-text="blend-blue-yellow-light" class="blend-blue-yellow-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-pink-yellow" data-color="pink-yellow" data-tint="" data-clipboard-text="blend-pink-yellow" class="blend-pink-yellow block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-pink-yellow-dark" data-color="pink-yellow" data-tint="-dark" data-clipboard-text="blend-pink-yellow-dark" class="blend-pink-yellow-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-pink-yellow-light" data-color="pink-yellow" data-tint="-light" data-clipboard-text="blend-pink-yellow-light" class="blend-pink-yellow-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-red-blue" data-color="red-blue" data-tint="" data-clipboard-text="blend-red-blue" class="blend-red-blue block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-red-blue-dark" data-color="red-blue" data-tint="-dark" data-clipboard-text="blend-red-blue-dark" class="blend-red-blue-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+        <div id="blend-red-blue-light" data-color="red-blue" data-tint="-light" data-clipboard-text="blend-red-blue-light" class="blend-red-blue-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
+      </div>
+      <p class="compat">
+         
+        Unfortunately, it will not work with <strong>IE</strong> & <strong>Edge</strong> browsers, as well as <strong>Opera Mini</strong>, and <strong>Safari (desktop & IOS )</strong> is not supporting the <i>hue</i>, <i>saturation</i>, <i>color</i>, and <i>luminosity</i> blend modes.
+      </p>
+      <p>See compatibility for : <a href="http://caniuse.com/#feat=css-mixblendmode">mixblendmode </a> <a href="http://caniuse.com/#feat=css-filters">filters</a></p>
+      <p><i>A polyfill is on it's way!</i></p>
+    </div>
+  </div>
+  <footer> 
+    <p>
+      A Sunday<a href="www.twitter.com/lukyVj">@LukyVj</a> project.</p>
+    <br/>
+    <p><a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="LukyVJ" data-size="large" data-hashtags="colofilter.css">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    </p>
+  </footer>
+  <script src="scripts/clipboard.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>

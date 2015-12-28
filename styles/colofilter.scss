@@ -1,0 +1,296 @@
+// Colofilter.css v1.0.0
+$color-map: (
+  'red': '#E50914',
+  'orange': '#FCA300',
+  'blue': '#0066BF',
+  'yellow': '#FEDD31',
+  'purple': '#BC6D14',
+  'green': '#11C966',
+  'pink': '#EA4C89',
+  'blue-yellow': ' ',
+  'pink-yellow': ' ',
+  'red-blue': ' ',
+  'lime': ' '
+);
+
+[class^="blend"] {
+  position: relative;
+
+
+  img {
+    mix-blend-mode: luminosity;
+  }
+
+  &:before {
+    content: '.blend-'attr(data-color)''attr(data-tint);
+    position: absolute;
+    z-index: 3;
+    background: rgba(#000, 0.4);
+    color: #fff;
+    padding: 0.2em; 
+    font-size: 14px;
+  }
+
+  &:after {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    filter: /*hue-rotate(125deg) */ contrast(1.3);
+    mix-blend-mode: hue;
+  }
+
+  &[class*="-dark"] {
+    img {
+      mix-blend-mode: darken;
+    }
+
+    &:after {
+      mix-blend-mode: lighten !important;
+    }
+  }
+  &[class*="-light"] {
+    img {
+      mix-blend-mode: lighten;
+    }
+
+    &:after {
+      mix-blend-mode: darken !important;
+    }
+  }
+
+  @each $color, $value in $color-map {
+    &[class*="-#{$color}"] {
+      background: #{($value)};
+
+      @if $color == 'blue' {
+        &:not([class*="-dark"]):not([class*="-light"]){
+          &:after{
+            mix-blend-mode: hard-light;
+            filter: brightness(0.6);
+          }
+        }
+        &[class*="-dark"] {
+          &:after{
+            mix-blend-mode: darken !important;
+          }
+        }   
+      }
+
+      @if $color == 'orange' {
+        &[class*="-dark"] {
+          &:after{
+            mix-blend-mode: darken !important;
+          }
+        }   
+        &[class*="-light"] {
+          &:after{
+            mix-blend-mode: hue !important;
+            filter: saturate(400%) contrast(1.5);
+          }
+        }   
+      }
+
+      @if $color == 'red' {
+        &:after{
+          mix-blend-mode: hard-light;
+          filter: contrast(0.6) saturate(120%) brightness(1.2);
+        }
+        &[class*="-dark"] {
+          &:after{
+            mix-blend-mode: lighten !important;
+            filter: contrast(1.1) !important;
+          }
+        }
+
+        &[class*="-light"] {
+          &:after{
+            mix-blend-mode: color-dodge !important;
+            filter: saturate(400%) contrast(1.5);
+          }
+        }   
+      }
+
+      @if $color == 'green' {
+        &:not([class*="-dark"]):not([class*="-light"]){
+          &:after{
+            mix-blend-mode: soft-light;
+          }
+        }
+
+        &[class*="-light"] {
+          &:after{
+            mix-blend-mode: color-dodge !important;
+            filter: saturate(100%) brightness(0.8) contrast(160%);
+          }
+        }
+      }
+
+      @if $color == 'yellow' {
+        &:not([class*="-dark"]):not([class*="-light"]){
+          &:after{
+            filter: brightness(3.5);
+            mix-blend-mode: soft-light;
+          }
+        }
+        &[class*="-dark"] {
+          &:after{
+            mix-blend-mode: color-dodge !important;
+            filter: hue-rotate(70deg);
+          }
+        }  
+        &[class*="-light"] {
+          background: #000000;
+          &:after{
+            mix-blend-mode: color !important;
+            filter: brightness(3) hue-rotate(93deg) contrast(2) saturate(150);
+          }
+        }  
+      }
+
+      @if $color == 'purple' {
+        &:not([class*="-dark"]):not([class*="-light"]){
+          background: rebeccapurple;
+          &:after{
+            mix-blend-mode: darken !important;
+          }
+        }
+        &[class*="-dark"] {
+          background: #B10AFF;
+          &:after{
+            mix-blend-mode: soft-light !important;
+            filter: saturate(100);
+          }
+        }
+        &[class*="-ligh"] {
+          &:after{
+            background: #A37FC7;
+            filter: saturate(520%) brightness(10.5) contrast(350) !important;
+          }
+        }
+      }
+      @if $color == 'pink' {
+        &:not([class*="-dark"]):not([class*="-light"]):not([class*="-yellow"]){
+          &:after{
+          }
+        }
+        &[class*="-dark"] {
+          &:after{
+            background: #1D0E14;
+          }
+        }
+        &[class*="-ligh"] {
+          &:after{
+            background: #FF468D;
+            mix-blend-mode: lighten !important;
+            filter: contrast(1) saturate(250%) !important;
+          }
+        }
+      }
+
+      @if $color == 'blue-yellow' {
+        &:not([class*="-dark"]):not([class*="-light"]){
+          background: linear-gradient(to top left,#55ACEE, #FEDD31);
+          &:after{
+          }
+        }
+        &[class*="-dark"] {
+          &:after{
+            mix-blend-mode: hard-light !important
+          }
+        }
+        &[class*="-ligh"] {
+          &:after{
+            mix-blend-mode: hard-light !important;
+            filter: none;
+          }
+        }
+      }
+
+      @if $color == 'pink-yellow' {
+        &:not([class*="-dark"]):not([class*="-light"]){
+          background: linear-gradient(to bottom right, #FAA6FB, #FBBC05) !important; 
+          &:after{
+
+          }
+        }
+        &[class*="-dark"] {
+          &:after{
+            mix-blend-mode: hue !important;
+            filter: none !important;
+          }
+        }
+        &[class*="-ligh"] {
+          &:after{
+            mix-blend-mode: hard-light !important;
+            filter: none !important;
+          }
+        }
+      }
+
+      @if $color == 'red-blue' {
+        &:not([class*="-dark"]):not([class*="-light"]){
+          background: linear-gradient(to bottom right, #3993E2, #E2544B);
+          &:after{
+            filter: none;
+            mix-blend-mode: hard-light;
+          }
+        }
+        &[class*="-dark"] {
+          &:after{
+            mix-blend-mode: hard-light !important;
+            filter: none !important;
+          }
+        }
+        &[class*="-ligh"] {
+          &:after{
+            mix-blend-mode: screen !important;
+            filter: saturate(300%) brightness(1.2) !important;
+          }
+        }
+      }
+
+      &:after {
+        background: #{($value)};
+
+        @if $color == 'red' {
+          background: #282581;
+        }
+        @if $color == 'blue' {
+          background: #93EF90;
+        }
+
+        @if $color == 'yellow' {
+          background: #EF3CB4;
+        }
+
+        @if $color == 'green' {
+          background: #2D3181;
+        }
+
+        @if $color == 'purple' {
+          background: #ACFCEE;
+        }
+        @if $color == 'pink' {
+          background: #EA4C89;
+        }
+
+        @if $color == 'blue-yellow' {
+          background: linear-gradient(to top left,#55ACEE, #FEDD31) !important;
+        }
+
+        @if $color == 'pink-yellow'{
+          background: linear-gradient(to top left, #FAA6FB, #FBBC05) !important; 
+        }
+
+        @if $color == 'red-blue' {
+          background: linear-gradient(to bottom right, #3993E2, #E2544B);
+        } 
+      }
+    }
+  }
+}
+

@@ -432,6 +432,8 @@ footer {
   -webkit-transform: scale(0.99);
   transform: scale(0.99);
   cursor: pointer;
+  transition: opacity 0.2s ease, -webkit-transform 0.2s ease;
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
 .filters .block img {
   -webkit-filter: grayscale(100%) contrast(1.2);
@@ -439,6 +441,11 @@ footer {
   display: block;
   float: left;
   width: 100%;
+}
+.filters .block:active {
+  opacity: 0.5;
+  -webkit-transform: scale(0.89);
+  transform: scale(0.89);
 }
 .filters .block span {
   display: block;

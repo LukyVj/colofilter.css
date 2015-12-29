@@ -219,3 +219,11 @@ footer {
 }
 
 
+// 
+[class^="blend-"]{
+  position: relative;
+
+  &:before{
+    content: '.blend-'attr(data-color)''attr(data-tint);
+  }
+}

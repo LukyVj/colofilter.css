@@ -1,12 +1,8 @@
 @charset "UTF-8";
-[class^="blend"] {
-  position: relative;
-}
 [class^="blend"] img {
   mix-blend-mode: luminosity;
 }
 [class^="blend"]:before {
-  content: ".blend-" attr(data-color) "" attr(data-tint);
   position: absolute;
   z-index: 3;
   background: rgba(0, 0, 0, 0.4);

@@ -14,7 +14,6 @@ $color-map: (
 );
 
 [class^="blend"] {
-  position: relative;
 
 
   img {
@@ -22,7 +21,6 @@ $color-map: (
   }
 
   &:before {
-    content: '.blend-'attr(data-color)''attr(data-tint);
     position: absolute;
     z-index: 3;
     background: rgba(#000, 0.4);
@@ -39,7 +37,7 @@ $color-map: (
     height: 100%;
     top: 0;
     left: 0;
-    filter: /*hue-rotate(125deg) */ contrast(1.3);
+    filter: contrast(1.3);
     mix-blend-mode: hue;
   }
 

@@ -1,14 +1,10 @@
 @charset "UTF-8";
 @import url(normalize.css);
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900);
-[class^="blend"] {
-  position: relative;
-}
 [class^="blend"] img {
   mix-blend-mode: luminosity;
 }
 [class^="blend"]:before {
-  content: ".blend-" attr(data-color) "" attr(data-tint);
   position: absolute;
   z-index: 3;
   background: rgba(0, 0, 0, 0.4);
@@ -460,4 +456,11 @@ footer {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+[class^="blend-"] {
+  position: relative;
+}
+[class^="blend-"]:before {
+  content: ".blend-" attr(data-color) "" attr(data-tint);
 }

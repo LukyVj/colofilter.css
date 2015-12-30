@@ -163,7 +163,7 @@ $color-map: (
             filter: saturate(100);
           }
         }
-        &[class*="-ligh"] {
+        &[class*="-light"] {
           &:after{
             background: #A37FC7;
             filter: saturate(520%) brightness(10.5) contrast(350) !important;
@@ -180,7 +180,7 @@ $color-map: (
             background: #1D0E14;
           }
         }
-        &[class*="-ligh"] {
+        &[class*="-light"] {
           &:after{
             background: #FF468D;
             mix-blend-mode: lighten !important;
@@ -200,7 +200,7 @@ $color-map: (
             mix-blend-mode: hard-light !important
           }
         }
-        &[class*="-ligh"] {
+        &[class*="-light"] {
           &:after{
             mix-blend-mode: hard-light !important;
             filter: none;
@@ -221,7 +221,7 @@ $color-map: (
             filter: none !important;
           }
         }
-        &[class*="-ligh"] {
+        &[class*="-light"] {
           &:after{
             mix-blend-mode: hard-light !important;
             filter: none !important;
@@ -243,7 +243,7 @@ $color-map: (
             filter: none !important;
           }
         }
-        &[class*="-ligh"] {
+        &[class*="-light"] {
           &:after{
             mix-blend-mode: screen !important;
             filter: saturate(300%) brightness(1.2) !important;

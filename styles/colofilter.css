@@ -127,7 +127,7 @@
   -webkit-filter: saturate(100);
   filter: saturate(100);
 }
-[class^="blend"][class*="-purple"][class*="-ligh"]:after {
+[class^="blend"][class*="-purple"][class*="-light"]:after {
   background: #A37FC7;
   -webkit-filter: saturate(520%) brightness(10.5) contrast(350) !important;
   filter: saturate(520%) brightness(10.5) contrast(350) !important;
@@ -157,7 +157,7 @@
 [class^="blend"][class*="-pink"][class*="-dark"]:after {
   background: #1D0E14;
 }
-[class^="blend"][class*="-pink"][class*="-ligh"]:after {
+[class^="blend"][class*="-pink"][class*="-light"]:after {
   background: #FF468D;
   mix-blend-mode: lighten !important;
   -webkit-filter: contrast(1) saturate(250%) !important;
@@ -176,7 +176,7 @@
 [class^="blend"][class*="-blue-yellow"][class*="-dark"]:after {
   mix-blend-mode: hard-light !important;
 }
-[class^="blend"][class*="-blue-yellow"][class*="-ligh"]:after {
+[class^="blend"][class*="-blue-yellow"][class*="-light"]:after {
   mix-blend-mode: hard-light !important;
   -webkit-filter: none;
   filter: none;
@@ -196,7 +196,7 @@
   -webkit-filter: none !important;
   filter: none !important;
 }
-[class^="blend"][class*="-pink-yellow"][class*="-ligh"]:after {
+[class^="blend"][class*="-pink-yellow"][class*="-light"]:after {
   mix-blend-mode: hard-light !important;
   -webkit-filter: none !important;
   filter: none !important;
@@ -221,7 +221,7 @@
   -webkit-filter: none !important;
   filter: none !important;
 }
-[class^="blend"][class*="-red-blue"][class*="-ligh"]:after {
+[class^="blend"][class*="-red-blue"][class*="-light"]:after {
   mix-blend-mode: screen !important;
   -webkit-filter: saturate(300%) brightness(1.2) !important;
   filter: saturate(300%) brightness(1.2) !important;

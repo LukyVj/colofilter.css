@@ -1,4 +1,3 @@
-@charset "UTF-8";
 [class^="blend"] img {
   mix-blend-mode: luminosity;
 }
@@ -54,6 +53,8 @@
 }
 [class^="blend"][class*="-red"]:after {
   background: #E50914;
+}
+[class^="blend"][class*="-red"]:after {
   background: #282581;
 }
 [class^="blend"][class*="-orange"] {
@@ -83,6 +84,8 @@
 }
 [class^="blend"][class*="-blue"]:after {
   background: #0066BF;
+}
+[class^="blend"][class*="-blue"]:after {
   background: #93EF90;
 }
 [class^="blend"][class*="-yellow"] {
@@ -108,6 +111,8 @@
 }
 [class^="blend"][class*="-yellow"]:after {
   background: #FEDD31;
+}
+[class^="blend"][class*="-yellow"]:after {
   background: #EF3CB4;
 }
 [class^="blend"][class*="-purple"] {
@@ -134,6 +139,8 @@
 }
 [class^="blend"][class*="-purple"]:after {
   background: #BC6D14;
+}
+[class^="blend"][class*="-purple"]:after {
   background: #ACFCEE;
 }
 [class^="blend"][class*="-green"] {
@@ -149,6 +156,8 @@
 }
 [class^="blend"][class*="-green"]:after {
   background: #11C966;
+}
+[class^="blend"][class*="-green"]:after {
   background: #2D3181;
 }
 [class^="blend"][class*="-pink"] {
@@ -165,10 +174,9 @@
 }
 [class^="blend"][class*="-pink"]:after {
   background: #EA4C89;
-  background: #EA4C89;
 }
-[class^="blend"][class*="-blue-yellow"] {
-  background:  ;
+[class^="blend"][class*="-pink"]:after {
+  background: #EA4C89;
 }
 [class^="blend"][class*="-blue-yellow"]:not([class*="-dark"]):not([class*="-light"]) {
   background: linear-gradient(to top left, #55ACEE, #FEDD31);
@@ -182,11 +190,7 @@
   filter: none;
 }
 [class^="blend"][class*="-blue-yellow"]:after {
-  background:  ;
   background: linear-gradient(to top left, #55ACEE, #FEDD31) !important;
-}
-[class^="blend"][class*="-pink-yellow"] {
-  background:  ;
 }
 [class^="blend"][class*="-pink-yellow"]:not([class*="-dark"]):not([class*="-light"]) {
   background: linear-gradient(to bottom right, #FAA6FB, #FBBC05) !important;
@@ -202,11 +206,7 @@
   filter: none !important;
 }
 [class^="blend"][class*="-pink-yellow"]:after {
-  background:  ;
   background: linear-gradient(to top left, #FAA6FB, #FBBC05) !important;
-}
-[class^="blend"][class*="-red-blue"] {
-  background:  ;
 }
 [class^="blend"][class*="-red-blue"]:not([class*="-dark"]):not([class*="-light"]) {
   background: linear-gradient(to bottom right, #3993E2, #E2544B);
@@ -227,12 +227,5 @@
   filter: saturate(300%) brightness(1.2) !important;
 }
 [class^="blend"][class*="-red-blue"]:after {
-  background:  ;
   background: linear-gradient(to bottom right, #3993E2, #E2544B);
-}
-[class^="blend"][class*="-lime"] {
-  background:  ;
-}
-[class^="blend"][class*="-lime"]:after {
-  background:  ;
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(normalize.css);
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro:400,700,900);
 [class^="blend"] img {
@@ -56,6 +55,8 @@
 }
 [class^="blend"][class*="-red"]:after {
   background: #E50914;
+}
+[class^="blend"][class*="-red"]:after {
   background: #282581;
 }
 [class^="blend"][class*="-orange"] {
@@ -85,6 +86,8 @@
 }
 [class^="blend"][class*="-blue"]:after {
   background: #0066BF;
+}
+[class^="blend"][class*="-blue"]:after {
   background: #93EF90;
 }
 [class^="blend"][class*="-yellow"] {
@@ -110,6 +113,8 @@
 }
 [class^="blend"][class*="-yellow"]:after {
   background: #FEDD31;
+}
+[class^="blend"][class*="-yellow"]:after {
   background: #EF3CB4;
 }
 [class^="blend"][class*="-purple"] {
@@ -129,13 +134,15 @@
   -webkit-filter: saturate(100);
   filter: saturate(100);
 }
-[class^="blend"][class*="-purple"][class*="-ligh"]:after {
+[class^="blend"][class*="-purple"][class*="-light"]:after {
   background: #A37FC7;
   -webkit-filter: saturate(520%) brightness(10.5) contrast(350) !important;
   filter: saturate(520%) brightness(10.5) contrast(350) !important;
 }
 [class^="blend"][class*="-purple"]:after {
   background: #BC6D14;
+}
+[class^="blend"][class*="-purple"]:after {
   background: #ACFCEE;
 }
 [class^="blend"][class*="-green"] {
@@ -151,6 +158,8 @@
 }
 [class^="blend"][class*="-green"]:after {
   background: #11C966;
+}
+[class^="blend"][class*="-green"]:after {
   background: #2D3181;
 }
 [class^="blend"][class*="-pink"] {
@@ -159,7 +168,7 @@
 [class^="blend"][class*="-pink"][class*="-dark"]:after {
   background: #1D0E14;
 }
-[class^="blend"][class*="-pink"][class*="-ligh"]:after {
+[class^="blend"][class*="-pink"][class*="-light"]:after {
   background: #FF468D;
   mix-blend-mode: lighten !important;
   -webkit-filter: contrast(1) saturate(250%) !important;
@@ -167,10 +176,9 @@
 }
 [class^="blend"][class*="-pink"]:after {
   background: #EA4C89;
-  background: #EA4C89;
 }
-[class^="blend"][class*="-blue-yellow"] {
-  background:  ;
+[class^="blend"][class*="-pink"]:after {
+  background: #EA4C89;
 }
 [class^="blend"][class*="-blue-yellow"]:not([class*="-dark"]):not([class*="-light"]) {
   background: linear-gradient(to top left, #55ACEE, #FEDD31);
@@ -178,17 +186,13 @@
 [class^="blend"][class*="-blue-yellow"][class*="-dark"]:after {
   mix-blend-mode: hard-light !important;
 }
-[class^="blend"][class*="-blue-yellow"][class*="-ligh"]:after {
+[class^="blend"][class*="-blue-yellow"][class*="-light"]:after {
   mix-blend-mode: hard-light !important;
   -webkit-filter: none;
   filter: none;
 }
 [class^="blend"][class*="-blue-yellow"]:after {
-  background:  ;
   background: linear-gradient(to top left, #55ACEE, #FEDD31) !important;
-}
-[class^="blend"][class*="-pink-yellow"] {
-  background:  ;
 }
 [class^="blend"][class*="-pink-yellow"]:not([class*="-dark"]):not([class*="-light"]) {
   background: linear-gradient(to bottom right, #FAA6FB, #FBBC05) !important;
@@ -198,17 +202,13 @@
   -webkit-filter: none !important;
   filter: none !important;
 }
-[class^="blend"][class*="-pink-yellow"][class*="-ligh"]:after {
+[class^="blend"][class*="-pink-yellow"][class*="-light"]:after {
   mix-blend-mode: hard-light !important;
   -webkit-filter: none !important;
   filter: none !important;
 }
 [class^="blend"][class*="-pink-yellow"]:after {
-  background:  ;
   background: linear-gradient(to top left, #FAA6FB, #FBBC05) !important;
-}
-[class^="blend"][class*="-red-blue"] {
-  background:  ;
 }
 [class^="blend"][class*="-red-blue"]:not([class*="-dark"]):not([class*="-light"]) {
   background: linear-gradient(to bottom right, #3993E2, #E2544B);
@@ -223,20 +223,13 @@
   -webkit-filter: none !important;
   filter: none !important;
 }
-[class^="blend"][class*="-red-blue"][class*="-ligh"]:after {
+[class^="blend"][class*="-red-blue"][class*="-light"]:after {
   mix-blend-mode: screen !important;
   -webkit-filter: saturate(300%) brightness(1.2) !important;
   filter: saturate(300%) brightness(1.2) !important;
 }
 [class^="blend"][class*="-red-blue"]:after {
-  background:  ;
   background: linear-gradient(to bottom right, #3993E2, #E2544B);
-}
-[class^="blend"][class*="-lime"] {
-  background:  ;
-}
-[class^="blend"][class*="-lime"]:after {
-  background:  ;
 }
 
 ::root {

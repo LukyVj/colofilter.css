@@ -1,4 +1,4 @@
-// Colofilter.css v1.0.0
+// Colofilter.css v1.0.1
 $color-map: (
   'red': '#E50914',
   'orange': '#FCA300',
@@ -10,12 +10,9 @@ $color-map: (
   'blue-yellow': ' ',
   'pink-yellow': ' ',
   'red-blue': ' ',
-  'lime': ' '
-);
+  );
 
 [class^="blend"] {
-
-
   img {
     mix-blend-mode: luminosity;
   }
@@ -61,9 +58,19 @@ $color-map: (
   }
 
   @each $color, $value in $color-map {
-    &[class*="-#{$color}"] {
-      background: #{($value)};
 
+    @if $color == 'blue-yellow' or 
+    $color == 'pink-yellow' or 
+    $color == 'red-blue' {
+      &[class*="-#{$color}"] {
+      }
+    }
+    @else {
+      &[class*="-#{$color}"] {
+        background: #{($value)};
+      }
+    }
+    &[class*="-#{$color}"] {
       @if $color == 'blue' {
         &:not([class*="-dark"]):not([class*="-light"]){
           &:after{
@@ -250,10 +257,18 @@ $color-map: (
           }
         }
       }
-
+      
+      @if $value == ' ' {
+        &:after {
+        }
+      }
+      @else {
+        &:after {
+          background: #{($value)};
+        }
+      }
+      
       &:after {
-        background: #{($value)};
-
         @if $color == 'red' {
           background: #282581;
         }

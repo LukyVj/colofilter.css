@@ -12,3 +12,7 @@ You can check this codepen collection using colofilter.css : [http://codepen.io/
 --- 
 [Check demo image (heavy)](https://github.com/LukyVj/colofilter.css/raw/master/filters.png)
  
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/LukyVj/colofilter.css/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+

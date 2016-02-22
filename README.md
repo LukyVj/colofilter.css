@@ -11,7 +11,9 @@ You can check this codepen collection using colofilter.css : [http://codepen.io/
 
 ---
 If you need to make colorify works with `background-image` please, take a look at : [This codepen demo](http://codepen.io/LukyVj/pen/9a44a89dc4e49884347141bb74a8927f)
-( But I'm about to update colofilter.css to make it easier to work with background images ) 
+
+( But I'm about to update colofilter.css to make it easier to work with background images )
+
 --- 
 [Check demo image (heavy)](https://github.com/LukyVj/colofilter.css/raw/master/filters.png)
 --- 

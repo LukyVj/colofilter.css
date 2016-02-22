@@ -15,7 +15,7 @@ If you need to make colorify works with `background-image` please, take a look a
 ( But I'm about to update colofilter.css to make it easier to work with background images )
 
 --- 
-[Check demo image (heavy)](https://github.com/LukyVj/colofilter.css/raw/master/filters.png)
+![Check demo image (heavy)](https://github.com/LukyVj/colofilter.css/raw/master/filters.png)
 --- 
 
 

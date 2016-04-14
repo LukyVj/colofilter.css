@@ -19,14 +19,14 @@
 <div class="container">
     <header>
       <h1>Colofilter.css</h1>
-      <p>Those colorful filters uses css blend modes and were heavily inspired by Spotify new 2015 ads</p>
-      <p>This technic is called "DuoTone", and today, with the power of CSS we can play around with some blend-modes properties, to get some cool visual results.</p>
+      <p>Those colorful filters uses CSS blend modes and were heavily inspired by Spotify's new 2015 ads</p>
+      <p>This technic is called "Duotone", and today, with the power of CSS we can play around with some blend-mode properties to get some cool visual results.</p>
     </header>
-    <div class="content"><a href="javascript:void(0)" class="closeBlock">close spotify examples</a>
+    <div class="content"><a href="javascript:void(0)" class="closeBlock">Close Spotify examples</a>
       <div class="spotifyBlock"><img src="http://f.fastcompany.net/multisite_files/fastcompany/imagecache/slideshow_large/slideshow/2015/03/3043547-slide-s-3-spotifys-new-look-signals-its-identity-shift.jpg"/><img src="http://www.adweek.com/files/2015_Dec/spotify-geotargeting-01-2015.png"/><img src="https://i.ytimg.com/vi/3SKii_OLrHs/maxresdefault.jpg"/><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/spotify_geoffrey_duotone.gif"/></div>
-      <p>To use those filters, download the <a href="https://github.com/LukyVj/colofilter.css/blob/master/styles/colofilter.css" target="_blank"><code>colofilter.css</code></a> file, add it to the <code>head</code> of your document :</p>
+      <p>To use these filters, download the <a href="https://github.com/LukyVj/colofilter.css/blob/master/styles/colofilter.css" target="_blank"><code>colofilter.css</code></a> file, and add it to the <code>head</code> of your document using:</p>
       <pre class="language-markup"><code class="language-markup">&lt;link href="path/to/colofilter.css" rel="stylesheet" type="text/css"></code></pre>
-      <p>Then to use the filters, use the proper classes on your elements, and that's it!</p>
+      <p>Then, to use the filters, use the proper classes on your elements, and that's it!</p>
       <pre class="language-markup"><code class="language-markup">&lt;div class="blend-blue">
     &lt;img src="image.png"/>
     &lt;span>lorem&lt;/span>
@@ -64,18 +64,15 @@
         <div id="blend-red-blue-dark" data-color="red-blue" data-tint="-dark" data-clipboard-text="blend-red-blue-dark" class="blend-red-blue-dark block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
         <div id="blend-red-blue-light" data-color="red-blue" data-tint="-light" data-clipboard-text="blend-red-blue-light" class="blend-red-blue-light block"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/64/my_face.png"/><span>lorem</span></div>
       </div>
-      <p class="compat">
-         
-        Unfortunately, it will not work with <strong>IE</strong> & <strong>Edge</strong> browsers, as well as <strong>Opera Mini</strong>, and <strong>Safari (desktop & IOS )</strong> is not supporting the <i>hue</i>, <i>saturation</i>, <i>color</i>, and <i>luminosity</i> blend modes.
-      </p>
-      <p>See compatibility for : <a href="http://caniuse.com/#feat=css-mixblendmode">mixblendmode </a> <a href="http://caniuse.com/#feat=css-filters">filters</a></p>
-      <p><i>A polyfill is on it's way!</i></p>
+      <p class="compat">Unfortunately, colofilter.css will not work with <strong>IE</strong>, <strong>Edge</strong>, <strong>Opera Mini</strong>, or <strong>Safari (desktop & iOS)</strong>, as they don't support the <i>hue</i>, <i>saturation</i>, <i>color</i>, and <i>luminosity</i> blend modes.</p>
+      <p>Check compatibility for <a href="http://caniuse.com/#feat=css-mixblendmode">mixblendmode</a> and <a href="http://caniuse.com/#feat=css-filters">filters</a>.</p>
+      <!-- It's okay, "its" is the proper form here. Feel free to delete this comment. -Fletch -->
+      <p><i>A polyfill is on its way!</i></p>
     </div>
   </div>
   <footer> 
-    <p>
-      A Sunday <a href="http://twitter.com/lukyVj">@LukyVj</a>'s project.</p>
-      <p>Find it on <a href="https://github.com/LukyVj/colofilter.css">github</a>.</p>
+    <p>A Sunday project by <a href="https://twitter.com/LukyVJ">@LukyVj</a>.</p>
+      <p>Find it on <a href="https://github.com/LukyVj/colofilter.css">GitHub</a>.</p>
     <br/>
     <p><a href="https://twitter.com/share" class="twitter-share-button"{count} data-via="LukyVJ" data-size="large" data-hashtags="colofilter.css">Tweet</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>

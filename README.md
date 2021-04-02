@@ -19,6 +19,10 @@ If you need to make colorify works with `background-image` please, take a look a
 --- 
 
 
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/LukyVj/colofilter.css.svg)](https://starchart.cc/LukyVj/colofilter.css)
+      
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/LukyVj/colofilter.css/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
